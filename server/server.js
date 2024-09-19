@@ -6,52 +6,6 @@ const agencyRoutes = require('./routes/agencyRoutes');
 const adminRoutes = require('./routes/adminRoutes');
 const authRoutes = require('./routes/authRoutes');
 const mongoose = require('mongoose');
-// const swaggerUi = require('swagger-ui-express');
-// const swaggerJsdoc = require('swagger-jsdoc');
-
-// Swagger setup
-// const swaggerOptions = {
-//   swaggerDefinition: {
-//     openapi: '3.0.0',
-//     info: {
-//       title: 'Agency Aggregator API',
-//       version: '1.0.0',
-//       description: 'API documentation for the Agency Aggregator application',
-//       contact: {
-//         name: 'Ukamaka',
-//         email: 'ukysmart96@gmail.com'
-//       },
-//       servers: [
-//         {
-//           url: 'http://localhost:5000',
-//         },
-//       ],
-//     },
-//     components: {
-//       securitySchemes: {
-//         bearerAuth: {
-//           type: 'http',
-//           scheme: 'bearer',
-//           bearerFormat: 'JWT',
-//         },
-//       },
-//     },
-//     security: [
-//       {
-//         bearerAuth: [],
-//       },
-//     ],
-//   },
-//   apis: ['./routes/agencyRoutes.js', './routes/adminRoutes.js', './routes/authRoutes.js'], // Point to your route files
-// };
-
-// const swaggerDocs = swaggerJsdoc(swaggerOptions);
-// app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
-
-// app.get('/', (req, res) => {
-//   res.send('API is running...');
-// });
-
 
 dotenv.config();
 connectDB();
